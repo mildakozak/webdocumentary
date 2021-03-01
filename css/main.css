@@ -14,7 +14,8 @@ body {
   color: #448A8A;
 }
 header{
-  padding: 13% 0;
+  padding-top: 10%;
+  padding-bottom: 13%;
   text-align: center;
 }
 .header-content H1{
