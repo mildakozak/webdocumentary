@@ -3,39 +3,92 @@
 *::after {
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+}
 
 body {
   margin: 0;
   background: #ffffff;
   font-family: 'Poppins', sans-serif;
+  color: #448A8A;
+}
+header{
+  padding: 13% 0;
+  text-align: center;
+}
+.header-content H1{
+  font-weight: 400;
+  font-size: 45px;
+}
+.header-logo{
+  margin-top: 20px;
+}
+.header-logo img{
+  max-width: 350px;
+}
+
+.some-icons{
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.icons{
+  float: right;
+}
+.icons img{
+  width: 35px;
+  margin-right: 10px;
 }
 
 .timeline {
   position: relative;
   width: 100%;
-  max-width: 1140px;
   margin: 0 auto;
   padding: 15px 0;
 }
-
+.wrapper{
+  max-width: 1300px;
+  margin: 0 auto;
+}
 .timeline::after {
   content: '';
   position: absolute;
-  width: 8px;
-  background: #242424;
+  width: 6px;
+  background: #448A8A;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -4px;
+  margin-left: -3px;
 }
-
 .container {
   padding: 15px 30px;
   position: relative;
   background: inherit;
   width: 50%;
 }
-
+.container-reverse{
+  background-color: #FFFFFF;
+}
+.image{
+  text-align: center;
+}
+.image img{
+  max-width: 280px;
+}
+.container-wrap{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 7% 0;
+  align-items: center;
+}
+.green{
+  background-color: #AECDCF;
+}
+.white{
+  background-color: #FFFFFF;
+}
 .container.left {
   left: 0;
 }
@@ -44,14 +97,14 @@ body {
   left: 50%;
 }
 
-.container::after {
+.dot {
   content: '';
   position: absolute;
   width: 24px;
   height: 24px;
   top: calc(50% - 12px);
   right: -12px;
-  background: #242424;
+  background: #448A8A;
   border-radius: 20px;
   z-index: 1;
 }
@@ -60,79 +113,67 @@ body {
   left: -12px;
 }
 
-/* .container::before {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 2px;
-  top: calc(50% - 1px);
-  right: 8px;
-  background: #242424;
-  z-index: 1;
+.content{
+  padding: 0 10px;
 }
-
-.container.right::before {
-  left: 8px;
-} */
-
-.container .date {
-  position: absolute;
-  display: inline-block;
-  top: calc(50% - 8px);
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  color: #242424;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  z-index: 1;
-}
-
-.container.left .date {
-  right: -75px;
-}
-
-.container.right .date {
-  left: -75px;
-}
-
-.container .content {
-  padding: 30px 90px 30px 30px;
-  background: #F5F5F5;
-  position: relative;
-  border-radius: 500px;
-}
-
-.container.right .content {
-  padding: 30px 30px 30px 90px;
-  border-radius: 500px;
-}
-
-.container .content h2 {
-  margin: 0 0 10px 0;
-  font-size: 18px;
-  font-weight: normal;
-  color: #242424;
-}
-
 .container .content p {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #000000;
+  color: #448A8A;
+  line-height: 1.5;
+}
+span{
+  font-weight: 600;
 }
 
-@media (max-width: 767.98px) {
-  .timeline::after {
-    left: 90px;
+@media (max-width: 800px) {
+
+  header{
+    padding: 30% 0;
+    text-align: center;
+  }
+  .header-content{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header-content H1{
+    font-size: 36px;
+  }
+  .header-logo{
+    margin-top: 30px;
+  }
+  .header-logo img{
+    max-width: 250px;
   }
 
+  .container-wrap{
+    flex-wrap: wrap;
+    padding-top: 10%;
+    padding-bottom: 15%;
+  }
+  .container-reverse{
+    flex-flow: column-reverse;
+  }
+  .timeline::after {
+    left: 60px;
+    width: 4px;
+    margin-left: -2px;
+  }
+  .dot {
+    display: none;
+  }
+  .image img{
+    max-width: 150px;
+  }
   .container {
     width: 100%;
-    padding-left: 120px;
+    padding-left: 100px;
     padding-right: 30px;
   }
-
+  .content{
+    padding: 0 0;
+  }
   .container.right {
     left: 0%;
   }
@@ -160,9 +201,48 @@ body {
     left: 146px;
   }
 
-  .container.left .content,
-  .container.right .content {
-    padding: 30px 30px 30px 90px;
-    border-radius: 500px 0 0 500px;
+}
+
+@media (max-width: 800px) {
+
+  header{
+    padding: 30% 0;
+    text-align: center;
   }
+  .header-content{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header-content H1{
+    font-size: 26px;
+  }
+  .header-logo{
+    margin-top: 30px;
+  }
+  .header-logo img{
+    max-width: 150px;
+  }
+
+  .container-wrap{
+    flex-wrap: wrap;
+    padding-top: 10%;
+    padding-bottom: 15%;
+  }
+  .container-reverse{
+    flex-flow: column-reverse;
+  }
+  .timeline::after {
+    left: 25px;
+    width: 4px;
+    margin-left: -2px;
+  }
+  .image img{
+    max-width: 150px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+
 }
