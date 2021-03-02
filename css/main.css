@@ -257,10 +257,18 @@ ul{
   .side-navivagion a{
     font-size: 20px;
   }
+  .product{
+    min-width: 200px;
+    min-height: 200px;
+  }
 
 }
 
 @media (max-width: 800px) {
+  .product{
+    min-width: 100px;
+    min-height: 100px;
+  }
   .icons-flexbox-container{
     flex-wrap: wrap;
     flex-direction: column;
@@ -352,4 +360,10 @@ ul{
     left: 146px;
   }
 
+}
+@media (max-width: 400px) {
+  .product{
+    min-width: 40px;
+    min-height: 40px;
+  }
 }
