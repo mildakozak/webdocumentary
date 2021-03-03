@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Webdocumentary</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
     </div>
     <header>
       <div class="header-content">
-        <h1>Small choices, but big impact.</h1>
+        <h1>Small choices, for a big impact.</h1>
         <div class="header-logo">
           <img src="images/icons/logo.svg" alt="Nuuii logo">
         </div>
@@ -29,15 +29,16 @@
     </header>
 
     <nav class="side-navivagion">
-      <a href="#">1</a><br>
-      <a href="#">2</a><br>
-      <a href="#">3</a><br>
-      <a href="#">4</a><br>
-      <a href="#">5</a><br>
-      <a href="#">6</a>
+      <a href="#1">1</a><br>
+      <a href="#2">2</a><br>
+      <a href="#3">3</a><br>
+      <a href="#4">4</a><br>
+      <a href="#5">5</a><br>
+      <a href="#6">6</a>
     </nav>
 
     <div class="timeline">
+      <a name="1"></a>
       <div class="green">
       <div class="wrapper">
       <div class="container-wrap">
@@ -57,6 +58,7 @@
       </div>
       </div>
 
+      <a name="2"></a>
       <div class="white">
       <div class="wrapper">
       <div class="container-wrap container-reverse">
@@ -79,6 +81,7 @@
       </div>
       </div>
 
+      <a name="3"></a>
       <div class="green">
       <div class="wrapper">
       <div class="container-wrap">
@@ -95,15 +98,23 @@
       </div>
       </div>
     </div>
+
+    <a name="4"></a>
     <section class="section-video">
       <div class="wrapper">
       <h2>At Nuuii we decided to change that!</h2>
-      <div class="video"></div>
+      <div class="video" onclick="playPause()">
+        <video src="videos/video.mp4" id="video"></video>
+        <div class="playPause-button">
+          <img src="images/icons/play.svg" alt="Play icon" id="video-icon">
+        </div>
+      </div>
       </div>
     </section>
 
     <div class="section-gap"></div>
 
+    <a name="5"></a>
     <section class="section-our-story">
       <div class="wrapper">
       <div class="paragraph-wapper">
@@ -136,6 +147,7 @@
 
     <div class="section-gap"></div>
 
+    <a name="6"></a>
     <section class="section-products">
       <div class="wrapper">
       <div class="product-headline">
@@ -145,23 +157,23 @@
 
         <div class="product-flex-container">
 
-        <div class="arrow">
-          <img src="images/icons/arrow.svg" alt="Arrow icon">
+        <div class="arrow" onclick="slideLeft()">
+          <img src="images/icons/arrow.svg" alt="Arrow icon" id="left-arrow-icon">
         </div>
 
         <div class="product-wapper">
         <div class="product">
-          <img src="images/icons/bottle.svg" alt="Bottle icon" id="product-img">
+          <img src="images/icons/bottle.svg" alt="Bottle icon" id="product-img-left">
         </div>
         <div class="product">
-          <img src="images/icons/bag.svg" alt="Bag icon" id="product-img">
+          <img src="images/icons/bag.svg" alt="Bag icon" id="product-img-center">
         </div>
         <div class="product">
-          <img src="images/icons/soap.svg" alt="Soap icon" id="product-img">
+          <img src="images/icons/soap.svg" alt="Soap icon" id="product-img-right">
         </div>
         </div>
-        <div class="arrow">
-          <img src="images/icons/arrow-reverse.svg" alt="Arrow icon">
+        <div class="arrow" onclick="slideRight()">
+          <img src="images/icons/arrow-reverse.svg" alt="Arrow icon" id="right-arrow-icon">
         </div>
         </div>
       </div>
@@ -181,6 +193,21 @@
       </div>
     </div>
     </section>
+
+    <section class="section-buy-now green">
+      <a href="#">BUY NOW</a>
+    </section>
+
+    <footer>
+      <div class="footer-icons-container">
+        <div class="footer-icon">
+          <img src="images/icons/ctc.svg" alt="CTC icon">
+        </div>
+        <div class="footer-icon">
+          <img src="images/icons/fsc.svg" alt="FSC icon">
+        </div>
+      </div>
+    </footer>
   <script src="js/main.js"></script>
   </body>
 </html>

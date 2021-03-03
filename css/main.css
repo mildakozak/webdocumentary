@@ -168,9 +168,25 @@ ul{
 }
 .video{
   max-width: 1000px;
-  height: 500px;
+  height: auto;
   background-color: #F5F5F5;
   margin: auto;
+  position: relative;
+}
+.video:hover .playPause-button{
+  display: block;
+  opacity: 1;
+  transition: all 1s;
+}
+.playPause-button{
+  transition: all 1s;
+  opacity: 0;
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+}
+.playPause-button img{
+  width: 70px;
 }
 .section-our-story{
   text-align: center;
@@ -247,6 +263,38 @@ ul{
   display: flex;
   flex-direction: row;
   margin: auto;
+}
+.section-buy-now{
+  padding: 50px 0;
+  text-align: center;
+}
+.section-buy-now a{
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px 30px;
+}
+.video video{
+  width: 100%;
+  height: auto;
+}
+footer{
+  padding: 50px 0;
+}
+.footer-icons-container{
+  display: flex;
+  flex-direction: row;
+  max-width: 300px;
+  min-width: 240px;
+  margin: auto;
+}
+.footer-icon{
+  margin: auto;
+}
+.footer-icon img{
+  max-height: 90px;
 }
 
 @media (max-width: 1200px){
