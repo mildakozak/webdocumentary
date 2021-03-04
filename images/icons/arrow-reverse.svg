@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="57.032" height="52" viewBox="0 0 57.032 52">
-  <g id="Group_8" data-name="Group 8" transform="translate(-1781.968 -7164)">
-    <circle id="Ellipse_10" data-name="Ellipse 10" cx="26" cy="26" r="26" transform="translate(1787 7164)" fill="#448a8a"/>
-    <g id="Component_1_1" data-name="Component 1 – 1" transform="translate(1784.5 7178.5)">
-      <line id="Line_4" data-name="Line 4" y1="0.5" x2="39" transform="translate(0 11.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
-      <line id="Line_5" data-name="Line 5" x2="15.25" y2="11.5" transform="translate(24)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
-      <line id="Line_6" data-name="Line 6" y1="12.5" x2="15.25" transform="translate(24 11.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="57.032" height="52"  xmlns:v="https://vecta.io/nano"><circle cx="31.032" cy="26" r="26" fill="#448a8a"/><path d="M2.532 26.5l39-.5m-15-11.5L41.782 26m-15.25 12.5L41.782 26" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/></svg>
